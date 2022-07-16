@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbuddies</title>
+   
+
+    <style>
+        .logo{
+            display: block;
+            margin: auto;
+            width: 50px;
+            height: 50px;
+        }.container{
+            max-width: 900px;
+            margin: auto;
+            border: 2px solid black;
+            height: 60vh;
+            overflow-y: auto;
+            margin-bottom: 23px;
+
+        }.message{
+            background-color: chocolate;
+            width: 24%;
+            padding: 10px;
+            margin: 17px 2px;
+            border-radius: 16px;
+            
+
+        }.supe{
+            color: blueviolet;
+        }
+        .right{
+            float: right;
+            clear: both;
+        }.left{
+            float: left;
+            clear: both;
+            
+            
+        }.bottom{
+            margin: 0 auto;
+            border: 2px solid green;
+            color: aqua;
+            background-color: black;
+        }
+        #send-container{
+            text-align: center;
+           display: block;
+           margin: auto;
+           max-width: 985px;
+           width: 100%;
+
+        }#messageInp{
+            width: 92%;
+            border: 2px solid black;
+            border-radius: 6px;
+            height: 33px;
+
+        }.btn{
+    
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 6px;
+            height: 34px;
+        }
+    </style>
+</head>
+<body><nav>
+    <div class="logo"></div></nav>
+    <div class="container">
+        <!-- <div class="message right"><div class="super" id="superr"></div></div>
+        <div class="message left"><div class="super" id="superr"></div></div>
+        <div class="bottom"></div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="./client.js"></script>
+</body>
+</html>
